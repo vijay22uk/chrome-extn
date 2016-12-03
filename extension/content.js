@@ -1,6 +1,6 @@
 (function () {
     'use strict';
-    var api = "//localhost:8080/extension";
+    var api = "//extn.herokuapp.com";
     chrome.runtime.onMessage.addListener(
         function (request, sender, sendResponse) {
             debugger
