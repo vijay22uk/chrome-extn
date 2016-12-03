@@ -1,5 +1,6 @@
 (function () {
   'use strict';
+  var totalCalls = 0;
   function getCurrentTabUrl(callback) {
     var queryInfo = {
       active: true,
@@ -21,25 +22,22 @@
     }
 
   })
-
-
   // Events
   function readPageData() {
-    debugger
     var readImages = document.getElementById("readImages").checked;
     var readType = readImages ? "IMG" : "FLIPKART";
-    // chrome.runtime.sendMessage({
-    //   msg: "readPageData",
-    //   type: readType
-    // },
-    //   function (response) {
-
-    //   });
     chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-      chrome.tabs.sendMessage(tabs[0].id, { msg: "readPageData", readType: readType }, function (response) {
-        // send data
-
-      });
+      chrome.tabs.sendMessage(tabs[0].id,
+        {
+          msg: "readPageData",
+          readType: readType,
+          origin: tabs[0].url
+        },
+        function (response) {
+          if(response.done){
+            document.getElementById('btnRead').innerHTML ="DONE (" + ++totalCalls +")";
+          }
+        });
     });
 
   }
