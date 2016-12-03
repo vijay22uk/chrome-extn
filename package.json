@@ -1,0 +1,24 @@
+{
+  "name": "chrome-extn",
+  "version": "1.0.0",
+  "description": "A chrome extension along with server",
+  "main": "./server/server.js",
+  "scripts": {
+    "start":"node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vijay22uk/chrome-extn.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vijay22uk/chrome-extn/issues"
+  },
+  "homepage": "https://github.com/vijay22uk/chrome-extn#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
+  }
+}
