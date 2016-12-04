@@ -46,7 +46,7 @@
                 eleConatiner.append(collapse);
 
             } else {
-                var text = $('<div id="data' + i + '" class="collapse">' + data[i].data.join() + '</div>')
+                var text = $('<div id="data' + i + '" class="collapse">' + data[i].data[0] + '</div>')
                 eleConatiner.append(text);
             }
 
