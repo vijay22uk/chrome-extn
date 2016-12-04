@@ -1,7 +1,7 @@
 # chrome-extn
 A chrome extension to read page data and send to server.
 
-## TO Load extension follow https://developer.chrome.com/extensions/getstarted#unpacked
+## To Load extension follow https://developer.chrome.com/extensions/getstarted#unpacked
 ### Load extension folder as an extension from chrome://extensions
 ### Extension Icon will appear in top right corner of chrome extension bar
 
