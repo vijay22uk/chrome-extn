@@ -19,6 +19,6 @@ A chrome extension to read page data and send to server.
 ## The server show listing of fetched data with their type Images/Flipkart and origin/url of page which on click will expand on shows recored data.
 
 <h3>The Screens</h3>
-![alt tag](https://raw.githubusercontent.com/vijay22uk/connecthow/master/screen/Untitled2.png)
-![alt tag](https://raw.githubusercontent.com/vijay22uk/connecthow/master/screen/new.png)
-![alt tag](https://raw.githubusercontent.com/vijay22uk/connecthow/master/screen/dash.png)
+![alt tag](https://raw.githubusercontent.com/vijay22uk/chrome-extn/master/screens/logo.png)
+![alt tag](https://raw.githubusercontent.com/vijay22uk/chrome-extn/master/screens/expand.png)
+![alt tag](https://raw.githubusercontent.com/vijay22uk/chrome-extn/master/screens/explorer.png)
