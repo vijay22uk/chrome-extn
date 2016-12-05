@@ -34,7 +34,8 @@
           origin: tabs[0].url
         },
         function (response) {
-          if(response.done){
+          // if page is not refreshed after extn load //dev mode
+          if(response && response.done){
             document.getElementById('btnRead').innerHTML ="DONE (" + ++totalCalls +")";
           }
         });
